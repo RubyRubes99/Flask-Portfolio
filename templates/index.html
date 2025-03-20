@@ -22,16 +22,25 @@
                     <div class="card-body">
                         <div class="text-center">
                             {% if project.image_url %}
-                            <img src="{{ project.image_url }}" class="img-fluid mb-3" alt="Project Image">
+                            <!--<img src="{{ project.image_url }}" class="img-fluid mb-3" alt="Project Image"> -->
+                            <img src="{{ project.image_url }}" class="img-fluid mb-3" alt="Project Image"
+                            {% if project.title == 'WiFi Lamp' or project.title == 'Speech-to-Text Recognition App' %}style="width: 300px; height: 400px;"{% endif %}>
                             {% endif %}
                         </div>
                         <h5 class="card-title">{{ project.title }}</h5>
                         <p class="card-text">{{ project.description }}</p>
-                        {% if project.github %} 
+                        {% if project.title == "Computer Vision Piano System" %} 
+                        <a href="{{ project.video_url }}" class="btn btn-primary" target="_blank">Watch Demo</a>
+                        <a href="{{ project.github }}" class="btn btn-secondary" target="_blank">Read Report</a>
+                        {% endif %}
+                        {% if project.title == "Simple Real Time Hand Detector Tutorial" %} 
+                        <a href="{{ project.github }}" class="btn btn-primary" target="_blank">View Tutorial</a>
+                        {% endif %}
+                        {% if project.title == "WiFi Lamp" %} 
                         <a href="{{ project.github }}" class="btn btn-primary" target="_blank">View Code</a>
                         {% endif %}
-                        {% if project.video_url %}
-                        <a href="{{ project.video_url }}" class="btn btn-secondary" target="_blank">Watch Demo</a>
+                        {% if project.title == "Speech-to-Text Recognition App" %} 
+                        <a href="{{ project.github }}" class="btn btn-primary" target="_blank">View Code</a>
                         {% endif %}
                     </div>
                 </div>
