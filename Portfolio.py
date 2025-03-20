@@ -21,7 +21,7 @@ projects = [
         "title": "Speech-to-Text Recognition App",
         "description": "An Android app that transcribes audio into text using offline ML.",
         "github": "https://github.com/your-repo",
-        "status": "Demo & Code Available"
+        "status": "Currently not available_Demo & Code Available"
     }
 ]
 
