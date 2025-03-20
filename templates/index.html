@@ -20,10 +20,14 @@
             <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body">
+                        <div class="text-center">
+                            {% if project.image_url %}
+                            <img src="{{ project.image_url }}" class="img-fluid mb-3" alt="Project Image">
+                            {% endif %}
+                        </div>
                         <h5 class="card-title">{{ project.title }}</h5>
                         <p class="card-text">{{ project.description }}</p>
-                        <p class="card-text">{{ project.status }}</p>
-                        {% if project.github %}
+                        {% if project.github %} 
                         <a href="{{ project.github }}" class="btn btn-primary" target="_blank">View Code</a>
                         {% endif %}
                         {% if project.video_url %}
