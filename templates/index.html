@@ -23,7 +23,7 @@
                         <div class="text-center">
                             {% if project.image_url %}
                             <!--<img src="{{ project.image_url }}" class="img-fluid mb-3" alt="Project Image"> -->
-                            <img src="{{ project.image_url }}" class="img-fluid mb-3" alt="Project Image"
+                            <img src="{{ url_for('static', filename=project.image_url)  }}" class="img-fluid mb-3" alt="Project Image"
                             {% if project.title == 'WiFi Lamp' or project.title == 'Speech-to-Text Recognition App' %}style="width: 300px; height: 400px;"{% endif %}>
                             {% endif %}
                         </div>

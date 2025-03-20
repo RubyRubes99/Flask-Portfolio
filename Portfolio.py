@@ -35,19 +35,20 @@ projects = [
     }
 ]
 
+
 @app.route('/')
 def home():
     # return render_template('index.html', projects=projects)
-    for project in projects:
-        project["image_url"] = url_for('static', filename=project["image_url"])
+    # for project in projects:
+        # project["image_url"] = url_for('static', filename=project["image_url"])
     return render_template('index.html', projects=projects)
 
 
 @app.route('/projects')
 def project_list():
     # return jsonify(projects)
-    for project in projects:
-        project["image_url"] = url_for('static', filename=project["image_url"])
+    # for project in projects:
+    #     project["image_url"] = url_for('static', filename=project["image_url"])
     return render_template('index.html', projects=projects)
 
 
