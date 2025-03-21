@@ -29,9 +29,9 @@ projects = [
     {
         "title": "Speech-to-Text Recognition App",
         "description": "An Android app that transcribes audio into text using offline ML.",
-        "image_url": "WifiLampDisplay.jpg",
-        "github": "https://github.com/your-repo",
-        "status": "Currently not available"
+        "image_url": "SpeechToTextAppDisplay.jpg",
+        "github": "https://github.com/RubyRubes99/Speech-To-Text-Android-App.git",
+        "status": "Android Studio Project Available"
     }
 ]
 
